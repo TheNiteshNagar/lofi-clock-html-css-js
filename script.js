@@ -34,7 +34,7 @@ const secondSecond = document.querySelector('.second-second')
 (function(){
   let isFullScreen = false
   document.documentElement.addEventListener('click', () => {
-    isFullScreen ? document.exitFullscreen() : document.requestFullscreen()
+    isFullScreen ? document.exitFullscreen() : document.documentElement.requestFullscreen()
     isFullScreen = !isFullScreen
   })
 }())
