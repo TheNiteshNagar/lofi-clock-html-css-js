@@ -33,11 +33,8 @@ const secondSecond = document.querySelector('.second-second')
 // Function to toggle Fullscreen
 (function(){
   let isFullScreen = false
-  document.body.addEventListener('click', () => {
-    const audio = new Audio('./public/audio-uwu.mp3')
-    audio.currentTime = 0
-    audio.play()
-    isFullScreen ? document.exitFullscreen() : document.body.requestFullscreen()
+  document.documentElement.addEventListener('click', () => {
+    isFullScreen ? document.exitFullscreen() : document.requestFullscreen()
     isFullScreen = !isFullScreen
   })
 }())
