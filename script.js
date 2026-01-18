@@ -29,6 +29,18 @@ const secondSecond = document.querySelector('.second-second')
 
   secondSecond.textContent = secondNow;
   firstSecond.textContent = secondNow < 10 ? '0' : '';
+
+// Function to toggle Fullscreen
+(function(){
+  let isFullScreen = false
+  document.body.addEventListener('click', () => {
+    const audio = new Audio('./public/audio-uwu.mp3')
+    audio.currentTime = 0
+    audio.play()
+    isFullScreen ? document.exitFullscreen() : document.body.requestFullscreen()
+    isFullScreen = !isFullScreen
+  })
+}())
 }
 
 
