@@ -33,7 +33,7 @@ const secondSecond = document.querySelector('.second-second')
 // Function to toggle Fullscreen
 (function(){
   let isFullScreen = false
-  document.querySelector('main').addEventListener('click', () => {
+  document.querySelector('.digital-clock').addEventListener('click', () => {
     isFullScreen ? document.exitFullscreen() : document.documentElement.requestFullscreen()
     isFullScreen = !isFullScreen
   })
