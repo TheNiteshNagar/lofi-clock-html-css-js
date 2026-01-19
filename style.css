@@ -39,12 +39,14 @@ main {
   margin-top: 15vh;
 }
 
+.digital-clock {
+    height: 5vw;
+}
+
 .digital-clock>span {
   font-size: x-large;
   font-weight: 400;
 }
-
-
 
 
 footer {
