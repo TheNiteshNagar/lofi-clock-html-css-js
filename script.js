@@ -1,8 +1,11 @@
+// define uwu audio globally
+const uwuPlay = new Audio('./public/audio-uwu.mp3')
+
 document.querySelector('.uwu').addEventListener('click', () => {
-  const uwuPlay = new Audio('./public/audio-uwu.mp3')
   uwuPlay.currentTime = 0;
   uwuPlay.play();
 })
+
 function getTime() {
 
 const now = new Date();
